@@ -1,0 +1,20 @@
+{
+  "name": "serjou-tools",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.2.4"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.45",
+    "winston": "^3.14.2"
+  }
+}
