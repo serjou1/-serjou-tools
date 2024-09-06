@@ -39,7 +39,7 @@ export class BotLogger {
         const e = new Error();
 
         const regex = /\((.*):(\d+):(\d+)\)$/
-        const match = regex.exec(e.stack.split("\n")[2]);
+        const match = regex.exec((e.stack as string).split("\n")[2]) as RegExpExecArray;
 
         const place = match[1].split('/').reverse()[0] + ':' + match[2];
 
@@ -58,7 +58,7 @@ export class BotLogger {
         const e = new Error();
 
         const regex = /\((.*):(\d+):(\d+)\)$/
-        const match = regex.exec(e.stack.split("\n")[2]);
+        const match = regex.exec((e.stack as string).split("\n")[2]) as RegExpExecArray;
 
         const place = match[1].split('/').reverse()[0] + ':' + match[2];
 
