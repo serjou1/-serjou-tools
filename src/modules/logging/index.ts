@@ -1,4 +1,4 @@
-import { createLogger } from "./bot-logger-factory";
+import { createLogger, createFileLogger } from "./bot-logger-factory";
 
 const defaultLogger = createLogger();
 
@@ -9,5 +9,6 @@ const info = (message: string): void => {
 export { BotLogger } from './classes/bot-logger';
 export {
     info,
-    createLogger
+    createLogger,
+    createFileLogger
 };
